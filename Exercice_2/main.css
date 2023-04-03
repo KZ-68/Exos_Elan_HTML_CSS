@@ -1,0 +1,291 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper 
+{
+    width: auto;
+    margin: 0 auto;
+    padding: 0 15%;
+    font-family: Arial;
+    background-color: rgba(238,187,28,255);
+}
+
+h1
+{
+    color: rgba(238,187,28,255);
+    font-size: 27px;
+    text-align: center;
+}
+
+header
+{
+    background-color: rgba(76,141,206,255);
+}
+
+#pinaise
+{
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#figure_simpsons
+{
+    height: 26vw; 
+    display: flex;
+    align-items:center;
+    flex-flow: column;
+    overflow: hidden; 
+    justify-content: center;
+}
+
+#img_simpsons
+{
+    padding-top: 14%;
+    width: 100%;
+}
+
+
+#navigation
+{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    background-color: rgba(76,141,206,255);
+    color: white;
+    font-size: 14px;
+    gap: 1%;
+}
+
+.nav1
+{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+main
+{
+    background-image: linear-gradient(to right, black 50%, rgba(255, 255, 255, 0) 0%);
+    /* Ajoute une image de fond avec une ou plusieurs couleurs, ici c'est une ligne noire avec des espacements sans couleur*/ 
+    background-position: top;
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 1%;
+    background-color: white;
+}
+
+#histoire
+{
+   margin-bottom: 1%;
+   text-align: justify;
+   padding: 30px;
+}
+
+#text_simpsons
+{
+    padding: 20px 0;
+    line-height: 1.7em;
+    color: #333;
+}
+
+#figure_movie
+{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    overflow: hidden;
+}
+
+#img_movie_1
+{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    object-position: 50% 29%;
+    border-style: solid;
+    border-width: 2px;
+    border-top-color: lightgray;
+    border-left-color: lightgray;
+    border-right-color:gray;
+    border-bottom-color: gray;
+}
+
+.img_movie_2
+{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    object-position: 50% 29%;
+    border-style: solid;
+    border-width: 2px;
+    border-top-color: lightgray;
+    border-left-color: gray;
+    border-right-color: lightgray;
+    border-bottom-color: gray;
+}
+
+
+#bio_groening
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(76,141,206,255);
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    margin-top: 8%;
+}
+
+#figure_groening
+{
+padding: 0;
+}
+
+#img_groening
+{
+    border: 1px solid ; color:white;
+}
+
+#title_groening
+{
+    color: white;
+    margin-bottom:0%;
+}
+
+#dessinateur
+{
+    font-style: italic;
+    color: white;
+    font-size: 15px;
+}
+
+#text_groening
+{
+    font-size: 15px;
+    color: white;
+    text-align: justify;
+    padding: 25px;
+}
+
+
+
+.copyright
+{
+    width: auto;
+    background-color:rgb(27, 72, 139);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin:0%
+}
+
+@media only screen and (max-width: 1150px) {
+    div.wrapper {
+     padding: 0 10%;
+    }
+  } 
+
+@media only screen and (max-width: 800px) {
+    div.wrapper {
+     padding: 0;
+    }
+    #navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main {
+        flex-direction: column;
+    } 
+
+    #figure_movie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img_movie_1, .img_movie_2 {
+        width: 250px;
+        height: 100%;
+    } 
+    
+    #bio_groening {
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+  } 
+
+
+
+
+@media only screen and (max-width: 768px) {
+    div.wrapper, p.pinaise {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    #bio_groening {
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+  } 
+
+@media only screen and (max-width: 600px) {
+    div.wrapper, main {
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
+
+    #bio_groening {
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+
+    #figure_movie {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #img_movie_1, .img_movie_2 {
+        max-width: 60%;
+        height: 100%;
+    }
+  } 
+
+  @media only screen and (max-width: 375px) {
+      div.wrapper, p.pinaise {
+          width: 100%;
+          font-size: 11px;
+      }
+
+      #bio_groening {
+        margin-bottom: 1%;
+        margin-top: 1%;
+    }
+    } 
+
